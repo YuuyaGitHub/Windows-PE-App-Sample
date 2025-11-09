@@ -6,7 +6,7 @@
 #pragma comment(lib, "advapi32.lib")
 
 void __stdcall mainCRTStartup(void) {
-    // WinPE����
+    // WinPE”»’è
     HKEY hKey;
     LONG r = RegOpenKeyExW(
         HKEY_LOCAL_MACHINE,
@@ -17,7 +17,7 @@ void __stdcall mainCRTStartup(void) {
     );
 
     if (r != ERROR_SUCCESS) {
-        ExitProcess(0);    // �ʏ�Windows�Ȃ瑦�I��
+        ExitProcess(0);    // ’ÊíWindows‚È‚ç‘¦I—¹
     }
     RegCloseKey(hKey);
 
